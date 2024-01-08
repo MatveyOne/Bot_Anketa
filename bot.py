@@ -51,7 +51,7 @@ def handle_restart(message):
 
 
 
-@bot.message_handler(func=lambda message: True)
+@bot.message_handler()
 def handle_answer(message):
     current_question = anketa.get_question(message.from_user.id)
     if current_question is not None:

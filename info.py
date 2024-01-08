@@ -54,10 +54,10 @@ class Anketa:
 
     def get_gif(self):
         gif_paths = {
-            "gif1": "C:/Users/user/PycharmProjects/bot_anketalast/beavis-and-butthead-bunghole.gif",
-            "gif2": "C:/Users/user/PycharmProjects/bot_anketalast/work-sucks-butt-head.gif",
-            "gif3": "C:/Users/user/PycharmProjects/bot_anketalast/water-slide-beavis.gif",
-            "gif4": "C:/Users/user/PycharmProjects/bot_anketalast/cool-butt-head.gif",
+            "gif1": "./beavis-and-butthead-bunghole.gif",
+            "gif2": "./work-sucks-butt-head.gif",
+            "gif3": "./water-slide-beavis.gif",
+            "gif4": "./cool-butt-head.gif",
         }
         gif_path = gif_paths.get(self.gif, None)
         return gif_path
