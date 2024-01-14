@@ -73,7 +73,7 @@ def handle_answer(message):
                     bot.send_message(message.chat.id, "Не удалось найти GIF-изображение.")
                 anketa.reset()  # Добавим сброс после отправки результата
         else:
-            bot.send_message(message.chat.id, "Ваш ответ не распознан. Напишите 'Да' или 'Нет'. Используйте /restart, чтобы начать заново")
+            bot.send_message(message.chat.id, "Ваш ответ не распознан. Напишите 'Да' или 'Нет'. Используйте /restart, чтобы начать заново", reply_markup=restart_markup)
 
 
 

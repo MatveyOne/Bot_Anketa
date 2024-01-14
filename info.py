@@ -46,7 +46,6 @@ class Anketa:
         elif 1 <= self.score <= 2:
             self.world = "'Беззаботный Бивис': Ты вписываешься в стиль Бивиса - беззаботного и ленивого. Ты знаешь толк в правильном отдыхе!"
             self.gif = "gif3"
-            self.gif = "gif5"
         elif  self.score == 0:
             self.world = "'Крутой Бивис': Ты не так уж ленив, по крайней мере, как Бивис. Поздравляю, ты крут!"
             self.gif = "gif4"
@@ -56,7 +55,7 @@ class Anketa:
         gif_paths = {
             "gif1": "./beavis-and-butthead-bunghole.gif",
             "gif2": "./work-sucks-butt-head.gif",
-            "gif3": "./water-slide-beavis.gif",
+            "gif3": "./water-slide-beavis.gif",                # TODO Поставить запятую и еще gif
             "gif4": "./cool-butt-head.gif",
         }
         gif_path = gif_paths.get(self.gif, None)
